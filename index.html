@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Aayush Maheshwari — AI/ML Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ═══ CINEMATIC INTRO SCREEN ═══ -->
+  <div class="intro" id="intro">
+
+    <div class="intro-badge" id="introBadge">
+      <span class="intro-brand-mark">AM</span>
+      <span class="intro-brand-copy">AAYUSH MAHESHWARI <i> / </i> PORTFOLIO</span>
+    </div>
+    <div class="intro-index" aria-hidden="true">CREATIVE SYSTEMS <span>—</span> 01</div>
+    <canvas class="intro-canvas" id="introCanvas"></canvas>
+
+    <div class="intro-stage" id="stageboot">
+      <div class="boot-heading"><span class="boot-signal"></span>SECURE CONNECTION ESTABLISHED</div>
+      <div class="boot-lines" id="bootLines"></div>
+    </div>
+
+    <div class="intro-stage" id="stagename">
+      <div class="name-pre"><span class="name-alert">!</span> PRESENTING THE BUILDER</div>
+      <div class="name-letters" id="nameLetters" aria-label="Aayush Maheshwari"></div>
+      <div class="name-role" id="nameRole"></div>
+      <div class="name-tagline">Intelligence with <span>real-world impact.</span></div>
+    </div>
+
+    <div class="intro-footer" aria-hidden="true">
+      <span>DESIGNED TO THINK FORWARD</span>
+      <span class="intro-footer-status"><i></i> SIGNAL ACTIVE</span>
+      <span>INDIA <b>·</b> 2026</span>
+    </div>
+    <div class="intro-burst" id="introBurst"></div>
+    <div class="intro-flash" id="introFlash"></div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certs</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about" class="mobile-link">About</a></li>
+      <li><a href="#skills" class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Projects</a></li>
+      <li><a href="#experience" class="mobile-link">Experience</a></li>
+      <li><a href="#certifications" class="mobile-link">Certs</a></li>
+      <li><a href="#contact" class="mobile-link">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- ═══ HERO ═══ -->
+  <section class="hero" id="hero">
+    <div class="hero-glow"></div>
+    <div class="hero-portrait" aria-hidden="true">
+      <img src="Aayush Maheshwari.jpeg" alt=""/>
+      <div class="hero-portrait-frame">
+        <span class="hero-portrait-corner corner-tl"></span>
+        <span class="hero-portrait-corner corner-tr"></span>
+        <span class="hero-portrait-corner corner-bl"></span>
+        <span class="hero-portrait-corner corner-br"></span>
+        <span class="hero-portrait-stamp">SUBJECT // AM</span>
+        <span class="hero-portrait-signal"><i></i> LIVE MESH</span>
+      </div>
+      <span class="hero-portrait-readout hero-readout-top">IDENTITY SCAN <b>ACTIVE</b></span>
+      <span class="hero-portrait-readout hero-readout-bottom">AI <i>•</i> DATA <i>•</i> SYSTEMS</span>
+    </div>
+    <canvas id="neuralCanvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <div class="hero-details">
+      <div class="hero-badge" data-aos="fade-down" data-aos-delay="200">
+        <span class="badge-dot"></span>
+        <span>Available for Opportunities</span>
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="300">
+        <span class="hero-title-line">Hi, I'm <span class="gradient-text">Aayush</span></span><br/>
+        <span class="hero-surname">Maheshwari</span>
+      </h1>
+      <div class="hero-typewriter" data-aos="fade-up" data-aos-delay="500">
+        <span id="typewriterText"></span><span class="cursor-blink">|</span>
+      </div>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="700">
+        Building intelligent systems that bridge the gap between raw data and real-world impact.
+      </p>
+      <div class="hero-actions" data-aos="fade-up" data-aos-delay="900">
+        <a href="#projects" class="btn-primary">
+          <span>View Projects</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="./Aayush_Maheshwari_Resume_.pdf" class="btn-resume" download="Aayush_Maheshwari_Resume.pdf" aria-label="Download Aayush Maheshwari's resume">
+          <span>Resume</span>
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" style="margin-left:4px"><path d="M10 3v10m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><rect x="3" y="15" width="14" height="2" rx="1" fill="currentColor"/></svg>
+        </a>
+      </div>
+      <div class="hero-socials" data-aos="fade-up" data-aos-delay="1100">
+        <a href="https://github.com/aayush321-pingi/" class="social-icon" aria-label="Open Aayush Maheshwari's GitHub profile" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/aayush-maheshwari-261173306/" class="social-icon" aria-label="Open Aayush Maheshwari's LinkedIn profile" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+      </div>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
+    <div class="float-particles" id="floatParticles"></div>
+  </section>
+
+  <!-- ═══ STATS ═══ -->
+  <section class="stats-bar" id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+          <span class="stat-num" data-target="3">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+          <span class="stat-num" data-target="20">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Skills Mastered</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+          <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+          <span class="stat-label">Certifications</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+          <span class="stat-num" data-target="8">0</span><span class="stat-decimal">.</span><span class="stat-num stat-cgpa" data-target="9">9</span>
+          <span class="stat-label">CGPA</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ABOUT ═══ -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">01 — About</div>
+      <div class="about-grid">
+        <div class="about-visual" data-aos="fade-right" data-aos-delay="200">
+        <div class="about-id-scene">
+          <div class="about-id-wireframe" aria-hidden="true">
+            <svg viewBox="0 0 480 560" preserveAspectRatio="none">
+              <path d="M18 96h96l36-38h152l52 47h108v218h-78l-47 46H121l-42-42H18z"/>
+              <path d="M0 154h82l38-38h135m52 0h80l34 34h59M0 380h84l39 39h174l41-42h82"/>
+              <path d="M52 24v74m348 352v72M30 270h72m276 0h72"/>
+              <circle cx="150" cy="58" r="4"/><circle cx="362" cy="105" r="4"/>
+              <circle cx="121" cy="419" r="4"/><circle cx="388" cy="377" r="4"/>
+            </svg>
+            </div>
+          <span class="about-id-data about-id-data-top">User <i>/// 001</i></span>
+          <span class="about-id-data about-id-data-bottom">AI <i>•</i> DATA <i>•</i> SYSTEMS</span>
+          <article class="about-id-card" aria-label="Aayush Maheshwari">
+            <header class="about-id-header">
+              <span class="about-id-brand"><b>AM</b><span>PERSONAL<br>Wireframe SYSTEM</span></span>
+              <span class="about-id-status"><i></i> ACTIVE</span>
+            </header>
+            <div class="about-id-photo">
+              <img src="Aayush Maheshwari.jpeg" alt="Aayush Maheshwari" class="about-img"/>
+              <span class="about-id-photo-label">VISUAL RECORD <b>01 / 01</b></span>
+              <span class="about-id-reticle about-id-reticle-top"></span>
+              <span class="about-id-reticle about-id-reticle-bottom"></span>
+            </div>
+            <div class="about-id-details">
+              <span class="about-id-kicker">PROFILE // ABOUT AAYUSH</span>
+              <h3 class="about-id-name">Aayush <span>Maheshwari</span></h3>
+              <p>AI/ML-focused developer building useful, real-world systems.</p>
+            </div>
+            <footer class="about-id-footer">
+              <span><i></i><b>AI / ML</b></span>
+              <span><i>EDUCATION</i><b>B.Tech CSE(AIML)</b></span>
+              <span><i>CGPA</i><b>8.9</b></span>
+            </footer>
+          </article>
+          </div>
+        </div>
+        <div class="about-content" data-aos="fade-left" data-aos-delay="300">
+          <h2 class="section-title about-heading">About Aayush!</h2>
+          <p class="about-text">
+            I'm an AI/ML-focused developer who enjoys turning messy, real-world problems into working systems. My experience spans data analysis, backend development, and computer vision, and I care most about building solutions that are reliable and useful in practice.
+          </p>
+          <div class="about-cards">
+            <article class="about-card">
+              <h3 class="about-card-title">Professional Experience</h3>
+              <p class="about-card-copy">
+                Most recently, I interned as a Data Analyst and Software Developer at Saltriver Info Systems, working on projects for large energy-sector clients. I built Python automation for GPS-based fleet tracking, including vehicle alerts, route analysis, odometer readings, and live Google Maps distance calculations.
+              </p>
+              <p class="about-card-copy">
+                I also developed a computer-vision system to estimate a person's height from camera input, applying machine learning, data structures and algorithms, and digital image processing. Earlier, at Maxgen Technologies, I built a practical foundation in cloud computing with AWS.
+              </p>
+            </article>
+            <article class="about-card">
+              <h3 class="about-card-title">Open Source &amp; Leadership</h3>
+              <p class="about-card-copy">
+                I contribute to GirlScript Summer of Code (AI Agents track) and Nexus Spring of Code, working with Python and deep neural networks while practicing real-world workflows like pull requests, code review, and version control.
+              </p>
+              <p class="about-card-copy">
+                As Head at Cup of Excellence (SIN Technologies), I lead team coordination and technical events, strengthening my communication, planning, and ownership skills.
+              </p>
+            </article>
+            <article class="about-card">
+              <h3 class="about-card-title">Core Skills</h3>
+              <ul class="about-skill-list">
+                <li><span>Languages</span><p>Python · C</p></li>
+                <li><span>AI / ML</span><p>Machine Learning · Deep Learning · Computer Vision · NLP · Generative AI · Neural Networks</p></li>
+                <li><span>Data &amp; Backend</span><p>Data Analysis · Automation · Full-Stack Development</p></li>
+                <li><span>Cloud &amp; Security</span><p>AWS · Cybersecurity Fundamentals</p></li>
+              </ul>
+            </article>
+            <article class="about-card">
+              <h3 class="about-card-title">What I'm Seeking</h3>
+              <p class="about-card-copy">
+                I'm looking for an entry-level role in AI/ML engineering, data science, or backend development where I can contribute from day one and keep growing with strong technical mentorship.
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ SKILLS ═══ -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">02 — Skills</div>
+      <h2 class="section-title centered" data-aos="fade-up">
+        Technical <span class="gradient-text">Arsenal</span>
+      </h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">
+        A glassy, connected toolkit built through real projects and continuous learning.
+      </p>
+
+      <div class="skills-tabs" data-aos="fade-up" data-aos-delay="200">
+        <button class="stab active" data-tab="languages">Languages</button>
+        <button class="stab" data-tab="aiml">AI / ML</button>
+        <button class="stab" data-tab="frameworks">Frameworks</button>
+        <button class="stab" data-tab="fullstack">Full Stack</button>
+        <button class="stab" data-tab="cloud">Cloud</button>
+      </div>
+
+      <div class="skills-panels">
+
+        <!-- LANGUAGES -->
+        <div class="skills-panel active" id="tab-languages">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/c/c-original.svg" alt="C" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">C</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">Python</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">Java</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <!-- Prolog: custom SVG -->
+                <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" class="sk-tech-icon" style="padding:4px">
+                  <rect width="48" height="48" rx="8" fill="#E8A117" opacity="0.15"/>
+                  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#E8A117">Pl</text>
+                  <path d="M8 36 Q24 20 40 36" stroke="#E8A117" stroke-width="2" fill="none" opacity="0.6"/>
+                </svg>
+              </div>
+              <div class="sk-name">Prolog</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="SQL" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">SQL</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="skills-panel" id="tab-aiml">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="Machine Learning" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">Machine Learning</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <!-- Deep Learning: custom neural icon -->
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="sk-tech-icon">
+                  <circle cx="8" cy="16" r="4" fill="#00e5ff" opacity="0.9"/>
+                  <circle cx="8" cy="32" r="4" fill="#00e5ff" opacity="0.9"/>
+                  <circle cx="24" cy="10" r="4" fill="#a855f7" opacity="0.9"/>
+                  <circle cx="24" cy="24" r="4" fill="#a855f7" opacity="0.9"/>
+                  <circle cx="24" cy="38" r="4" fill="#a855f7" opacity="0.9"/>
+                  <circle cx="40" cy="24" r="4" fill="#2d9cff" opacity="0.9"/>
+                  <line x1="12" y1="16" x2="20" y2="10" stroke="#00e5ff" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="12" y1="16" x2="20" y2="24" stroke="#00e5ff" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="12" y1="16" x2="20" y2="38" stroke="#00e5ff" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="12" y1="32" x2="20" y2="10" stroke="#00e5ff" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="12" y1="32" x2="20" y2="24" stroke="#00e5ff" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="12" y1="32" x2="20" y2="38" stroke="#00e5ff" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="28" y1="10" x2="36" y2="24" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="28" y1="24" x2="36" y2="24" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+                  <line x1="28" y1="38" x2="36" y2="24" stroke="#a855f7" stroke-width="1.5" opacity="0.5"/>
+                </svg>
+              </div>
+              <div class="sk-name">Deep Learning</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <!-- NLP icon -->
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="sk-tech-icon">
+                  <rect x="4" y="8" width="40" height="32" rx="6" fill="none" stroke="#2d9cff" stroke-width="2" opacity="0.8"/>
+                  <rect x="4" y="8" width="40" height="32" rx="6" fill="#2d9cff" opacity="0.08"/>
+                  <rect x="10" y="16" width="28" height="3" rx="1.5" fill="#2d9cff" opacity="0.7"/>
+                  <rect x="10" y="22" width="20" height="3" rx="1.5" fill="#00e5ff" opacity="0.7"/>
+                  <rect x="10" y="28" width="24" height="3" rx="1.5" fill="#2d9cff" opacity="0.5"/>
+                  <circle cx="38" cy="36" r="5" fill="#a855f7" opacity="0.9"/>
+                  <path d="M36 36 L38 38 L41 34" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="sk-name">NLP</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <!-- GenAI icon -->
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="sk-tech-icon">
+                  <defs>
+                    <radialGradient id="genai-grad" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.9"/>
+                      <stop offset="100%" stop-color="#2d9cff" stop-opacity="0.6"/>
+                    </radialGradient>
+                  </defs>
+                  <circle cx="24" cy="24" r="18" fill="url(#genai-grad)" opacity="0.2"/>
+                  <circle cx="24" cy="24" r="18" fill="none" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="4 3"/>
+                  <path d="M24 10 L26.5 20.5 L37 18 L28.5 25 L32 36 L24 29 L16 36 L19.5 25 L11 18 L21.5 20.5 Z" fill="#a855f7" opacity="0.85"/>
+                  <circle cx="24" cy="24" r="4" fill="white" opacity="0.9"/>
+                </svg>
+              </div>
+              <div class="sk-name">Generative AI</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRAMEWORKS -->
+        <div class="skills-panel" id="tab-frameworks">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tensorflow/tensorflow-original.svg" alt="TensorFlow" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">TensorFlow</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pytorch/pytorch-original.svg" alt="PyTorch" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">PyTorch</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/numpy/numpy-original.svg" alt="NumPy" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">NumPy</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/pandas/pandas-original.svg" alt="Pandas" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">Pandas</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/scikitlearn/scikitlearn-original.svg" alt="Scikit-learn" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">Scikit-learn</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FULL STACK -->
+        <div class="skills-panel" id="tab-fullstack">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">React</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">Node.js</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/flask/flask-original.svg" alt="Flask" class="sk-tech-icon sk-flask"/>
+              </div>
+              <div class="sk-name">Flask</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">Tailwind CSS</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML5" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">HTML / CSS</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- CLOUD -->
+        <div class="skills-panel" id="tab-cloud">
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS EC2" class="sk-tech-icon sk-aws"/>
+              </div>
+              <div class="sk-name">AWS EC2</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <!-- S3 icon -->
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="sk-tech-icon">
+                  <rect width="48" height="48" rx="8" fill="#FF9900" opacity="0.12"/>
+                  <path d="M24 8 L38 16 L38 32 L24 40 L10 32 L10 16 Z" fill="none" stroke="#FF9900" stroke-width="2"/>
+                  <path d="M10 16 L24 24 L38 16" stroke="#FF9900" stroke-width="2" fill="none"/>
+                  <line x1="24" y1="24" x2="24" y2="40" stroke="#FF9900" stroke-width="2"/>
+                  <text x="50%" y="52%" dominant-baseline="middle" text-anchor="middle" font-family="monospace" font-size="9" font-weight="bold" fill="#FF9900">S3</text>
+                </svg>
+              </div>
+              <div class="sk-name">AWS S3</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <!-- IAM icon -->
+                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" class="sk-tech-icon">
+                  <rect width="48" height="48" rx="8" fill="#FF9900" opacity="0.12"/>
+                  <circle cx="24" cy="16" r="7" fill="none" stroke="#FF9900" stroke-width="2"/>
+                  <path d="M10 38 C10 30 38 30 38 38" fill="none" stroke="#FF9900" stroke-width="2" stroke-linecap="round"/>
+                  <rect x="19" y="28" width="10" height="8" rx="2" fill="#FF9900" opacity="0.7"/>
+                  <circle cx="24" cy="32" r="1.5" fill="white"/>
+                </svg>
+              </div>
+              <div class="sk-name">AWS IAM</div>
+            </div>
+            <div class="skill-card">
+              <div class="sk-img-wrap">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" alt="MySQL" class="sk-tech-icon"/>
+              </div>
+              <div class="sk-name">MySQL</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ PROJECTS ═══ -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">03 — Projects</div>
+      <h2 class="section-title centered" data-aos="fade-up">
+        What I've <span class="gradient-text">Built</span>
+      </h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">
+        A new project every 10 seconds. Hover for 2 seconds to reveal the build.
+      </p>
+
+      <div class="project-carousel" data-project-carousel role="region" aria-label="Featured projects" aria-roledescription="carousel" tabindex="0">
+        <div class="project-carousel-window">
+          <div class="project-carousel-track">
+            <article class="project-slide" role="group" aria-roledescription="slide" aria-label="1 of 3">
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="project-face project-front">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                      <div class="project-icon">✦</div>
+                      <div class="project-num">01 / 03 <span class="project-category">RECRUITMENT AI</span></div>
+                    </div>
+                    <h3 class="project-title">AI HR ATS Manager</h3>
+                    <p class="project-desc">An end-to-end AI hiring platform that turns resumes into structured candidate profiles and helps teams find the right fit.</p>
+                    <div class="project-features">
+                      <span>LLM-powered PDF / DOCX resume parsing</span>
+                      <span>Semantic candidate-to-role ranking</span>
+                      <span>Skill-gap insights and suggestions</span>
+                    </div>
+                    <div class="project-tags" aria-label="Technologies">
+                      <span>Python</span><span>LLM</span><span>Deep Learning</span><span>React</span><span>MySQL</span><span>Flask</span>
+                    </div>
+                    <div class="project-card-footer">
+                      <span class="project-hint">Hover 2 seconds to reveal the build</span>
+                      <button class="proj-btn project-flip" type="button" aria-pressed="false">Explore the build <span aria-hidden="true">↗</span></button>
+                    </div>
+                  </div>
+                  <div class="project-face project-back" aria-hidden="true">
+                    <div class="project-glow"></div>
+                    <div class="project-back-top">
+                      <span class="project-back-label">01 / THE BUILD</span>
+                      <button class="project-flip project-flip-back" type="button" aria-pressed="true" aria-label="Flip AI HR ATS Manager back to overview">↩</button>
+                    </div>
+                    <h3 class="project-title">From resume to shortlist</h3>
+                    <p class="project-desc">A React dashboard backed by a Flask REST API and MySQL, with AI-assisted screening from document intake through candidate comparison.</p>
+                    <ul class="project-detail-list">
+                      <li>Extracts skills, education, and experience from PDF and DOCX resumes.</li>
+                      <li>Scores candidate profiles against job descriptions using semantic similarity.</li>
+                      <li>Highlights missing competencies and suggests areas for improvement.</li>
+                    </ul>
+                    <div class="project-tags" aria-label="Technologies">
+                      <span>Python</span><span>LLM</span><span>Deep Learning</span><span>React</span><span>MySQL</span><span>Flask</span>
+                    </div>
+                    <div class="project-card-footer">
+                      <span class="project-hint">Built for smarter hiring</span>
+                      <a class="proj-btn project-repo" href="https://github.com/aayush321-pingi/AI-HR-ASSISTANT---ibm" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-slide" role="group" aria-roledescription="slide" aria-label="2 of 3">
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="project-face project-front">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                      <div class="project-icon">⌁</div>
+                      <div class="project-num">02 / 03 <span class="project-category">FRAUD INTELLIGENCE</span></div>
+                    </div>
+                    <h3 class="project-title">AI-Powered Micro-Transaction Fraud Detection</h3>
+                    <p class="project-desc">A real-time defense system that combines transaction behavior with relationship intelligence to uncover suspicious activity.</p>
+                    <div class="project-features">
+                      <span>LSTM anomaly detection + GNN relationship analysis</span>
+                      <span>Low-latency Kafka transaction pipeline</span>
+                      <span>Redis features and a Streamlit risk dashboard</span>
+                    </div>
+                    <div class="project-tags" aria-label="Technologies">
+                      <span>Python</span><span>LSTM</span><span>GNN</span><span>Kafka</span><span>Redis</span><span>FastAPI</span><span>Streamlit</span>
+                    </div>
+                    <div class="project-card-footer">
+                      <span class="project-hint">Hover 2 seconds to reveal the build</span>
+                      <button class="proj-btn project-flip" type="button" aria-pressed="false">Explore the build <span aria-hidden="true">↗</span></button>
+                    </div>
+                  </div>
+                  <div class="project-face project-back" aria-hidden="true">
+                    <div class="project-glow"></div>
+                    <div class="project-back-top">
+                      <span class="project-back-label">02 / THE BUILD</span>
+                      <button class="project-flip project-flip-back" type="button" aria-pressed="true" aria-label="Flip fraud detection project back to overview">↩</button>
+                    </div>
+                    <h3 class="project-title">See the patterns behind a payment</h3>
+                    <p class="project-desc">A streaming ML workflow designed to surface both unusual individual transactions and hidden links across activity.</p>
+                    <ul class="project-detail-list">
+                      <li>Uses LSTM models to flag transaction anomalies and GNNs to identify connected fraud patterns.</li>
+                      <li>Streams transaction analysis through Kafka and FastAPI.</li>
+                      <li>Tracks behavioral signals in Redis and visualizes fraud alerts and risk scores in Streamlit.</li>
+                    </ul>
+                    <div class="project-tags" aria-label="Technologies">
+                      <span>Python</span><span>LSTM</span><span>GNN</span><span>Kafka</span><span>Redis</span><span>FastAPI</span><span>Streamlit</span>
+                    </div>
+                    <div class="project-card-footer">
+                      <span class="project-hint">Signals meet graph intelligence</span>
+                      <a class="proj-btn project-repo" href="https://github.com/aayush321-pingi/Micro-Fraud-Detection-" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-slide" role="group" aria-roledescription="slide" aria-label="3 of 3">
+              <div class="project-card">
+                <div class="project-card-inner">
+                  <div class="project-face project-front">
+                    <div class="project-glow"></div>
+                    <div class="project-header">
+                      <div class="project-icon">◖</div>
+                      <div class="project-num">03 / 03 <span class="project-category">CONVERSATIONAL AI</span></div>
+                    </div>
+                    <h3 class="project-title">AI Voice Sales Agent</h3>
+                    <p class="project-desc">A conversational sales assistant that listens for intent, understands customer needs, and turns calls into useful next steps.</p>
+                    <div class="project-features">
+                      <span>BERT intent classification and speech processing</span>
+                      <span>spaCy entity extraction for products and budgets</span>
+                      <span>Sentiment-aware dialogue and call summaries</span>
+                    </div>
+                    <div class="project-tags" aria-label="Technologies">
+                      <span>Python</span><span>BERT</span><span>NLP</span><span>spaCy</span><span>TextBlob</span><span>PyTorch</span>
+                    </div>
+                    <div class="project-card-footer">
+                      <span class="project-hint">Hover 2 seconds to reveal the build</span>
+                      <button class="proj-btn project-flip" type="button" aria-pressed="false">Explore the build <span aria-hidden="true">↗</span></button>
+                    </div>
+                  </div>
+                  <div class="project-face project-back" aria-hidden="true">
+                    <div class="project-glow"></div>
+                    <div class="project-back-top">
+                      <span class="project-back-label">03 / THE BUILD</span>
+                      <button class="project-flip project-flip-back" type="button" aria-pressed="true" aria-label="Flip AI Voice Sales Agent back to overview">↩</button>
+                    </div>
+                    <h3 class="project-title">Every conversation, understood</h3>
+                    <p class="project-desc">An NLP-driven call workflow that combines classification, entity extraction, sentiment analysis, and structured summaries.</p>
+                    <ul class="project-detail-list">
+                      <li>Classifies customer intent with BERT and extracts product and budget details with spaCy.</li>
+                      <li>Uses TextBlob sentiment analysis to follow customer emotion in real time.</li>
+                      <li>Guides responses with rule-based dialogue management and creates call summaries for lead qualification.</li>
+                    </ul>
+                    <div class="project-tags" aria-label="Technologies">
+                      <span>Python</span><span>BERT</span><span>NLP</span><span>spaCy</span><span>TextBlob</span><span>PyTorch</span>
+                    </div>
+                    <div class="project-card-footer">
+                      <span class="project-hint">Intent to insight, in real time</span>
+                      <a class="proj-btn project-repo" href="https://github.com/aayush321-pingi/" target="_blank" rel="noopener noreferrer">Explore GitHub profile <span aria-hidden="true">↗</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="project-carousel-controls">
+          <button class="carousel-arrow" type="button" data-carousel-prev aria-label="Previous project">←</button>
+          <div class="project-carousel-dots" aria-label="Choose a project">
+            <button class="carousel-dot active" type="button" data-carousel-slide="0" aria-label="Show AI HR ATS Manager" aria-current="true"></button>
+            <button class="carousel-dot" type="button" data-carousel-slide="1" aria-label="Show AI-Powered Micro-Transaction Fraud Detection"></button>
+            <button class="carousel-dot" type="button" data-carousel-slide="2" aria-label="Show AI Voice Sales Agent"></button>
+          </div>
+          <span class="carousel-count" aria-live="polite">01 <span>/ 03</span></span>
+          <button class="carousel-arrow" type="button" data-carousel-next aria-label="Next project">→</button>
+        </div>
+      </div>
+
+      <div class="github-repos" id="githubRepos" data-aos="fade-up" data-aos-delay="400">
+        <div class="repos-header">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.605-3.369-1.342-3.369-1.342-.454-1.155-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.294 2.747-1.026 2.747-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.339 4.687-4.566 4.934.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12c0-5.523-4.477-10-10-10z"/></svg>
+          <span>More on GitHub</span>
+          <span class="repos-live-indicator" aria-label="Live indicator"><i aria-hidden="true"></i>LIVE</span>
+        </div>
+        <div class="repos-grid" id="reposGrid">
+          <div class="repo-loading">Fetching repositories...</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ EXPERIENCE ═══ -->
+  <section class="experience section" id="experience">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">04 — Experience</div>
+      <h2 class="section-title centered" data-aos="fade-up">
+        Professional <span class="gradient-text">Journey</span>
+      </h2>
+      <div class="timeline">
+        <div class="timeline-line" aria-hidden="true"></div>
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-top">
+              <div class="tcard-icon">🌱</div>
+              <div class="tcard-meta">
+                <span class="tcard-company">GirlScript Summer of Code</span>
+                <span class="tcard-period">Apprenticeship · May 2026 – Present</span>
+                <span class="tcard-period">India · Remote</span>
+              </div>
+            </div>
+            <h3 class="tcard-role">Tech Contributor · AI Agents Track</h3>
+            <ul class="tcard-points">
+              <li>Contribute to open-source AI projects using Python and C.</li>
+              <li>Practice collaborative development through pull requests, code review, and version control.</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>Python</span><span>C</span><span>AI Agents</span><span>Open Source</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-top">
+              <div class="tcard-icon">🧠</div>
+              <div class="tcard-meta">
+                <span class="tcard-company">Nexus Spring of Code</span>
+                <span class="tcard-period">Part-time · Apr 2026 – Nov 2026</span>
+                <span class="tcard-period">Remote</span>
+              </div>
+            </div>
+            <h3 class="tcard-role">Tech Contributor</h3>
+            <ul class="tcard-points">
+              <li>Participated in a 45-day online open-source program for students and early-career developers.</li>
+              <li>Worked with Python and deep neural networks while building practical contribution experience.</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>Python</span><span>Deep Neural Networks</span><span>Open Source</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-top">
+              <div class="tcard-icon">📊</div>
+              <div class="tcard-meta">
+                <span class="tcard-company">Saltriver Info Systems</span>
+                <span class="tcard-period">Internship · May 2026 – Aug 2026</span>
+                <span class="tcard-period">Ahmedabad, Gujarat · Hybrid</span>
+              </div>
+            </div>
+            <h3 class="tcard-role">Data Analyst and Software Developer</h3>
+            <ul class="tcard-points">
+              <li>Built Python fleet-tracking automation for IOCL and HPCL projects, supporting 400 vehicles and 15 alert types.</li>
+              <li>Generated route reports, odometer readings, trip summaries, and live distance analysis with the Google Maps API.</li>
+              <li>Developed a computer-vision height estimator from camera input; tested it with 13 people and refined results to within 1 cm of manual readings.</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>Python</span><span>Google Maps API</span><span>Computer Vision</span><span>Data Analysis</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item right">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-top">
+              <div class="tcard-icon">☁️</div>
+              <div class="tcard-meta">
+                <span class="tcard-company">Maxgen Technologies</span>
+                <span class="tcard-period">Apprenticeship · Jun 2025 – Jul 2025</span>
+                <span class="tcard-period">Pune District · Hybrid</span>
+              </div>
+            </div>
+            <h3 class="tcard-role">Internship Trainee</h3>
+            <ul class="tcard-points">
+              <li>Gained practical exposure to cloud computing and Amazon Web Services.</li>
+              <li>Deployed a PHP-based website on AWS using Linux.</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>AWS</span><span>Linux</span><span>PHP</span><span>Project Planning</span>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-item left">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="tcard-top">
+              <div class="tcard-icon">💻</div>
+              <div class="tcard-meta">
+                <span class="tcard-company">Internshala</span>
+                <span class="tcard-period">Freelance · Jun 2024 – Oct 2024</span>
+                <span class="tcard-period">Jodhpur, Rajasthan · On-site</span>
+              </div>
+            </div>
+            <h3 class="tcard-role">Project Intern</h3>
+            <ul class="tcard-points">
+              <li>Built experience in website building and front-end development.</li>
+            </ul>
+            <div class="tcard-tags">
+              <span>Website Building</span><span>Front-End Development</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CERTIFICATIONS ═══ -->
+  <section class="certifications section" id="certifications">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">05 — Certifications</div>
+      <h2 class="section-title centered" data-aos="fade-up">
+        Verified <span class="gradient-text">Credentials</span>
+      </h2>
+      <div class="certs-grid">
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">✨</div>
+          <div class="cert-body">
+            <span class="cert-issuer">Google</span>
+            <h3 class="cert-name">Introduction to Generative AI</h3>
+            <p class="cert-desc">Issued Oct 2026 · Credential ID 29202944</p>
+          </div>
+          <a href="https://www.skills.google/public_profiles/516ffc32-d053-4ad8-bd79-d6990693edf7/badges/29202944" target="_blank" rel="noopener noreferrer" class="cert-btn">View Certificate</a>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="150">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🧠</div>
+          <div class="cert-body">
+            <span class="cert-issuer">Google</span>
+            <h3 class="cert-name">Introduction to Large Language Models</h3>
+            <p class="cert-desc">Issued May 2025 · Credential ID 15495800</p>
+          </div>
+          <a href="https://www.skills.google/public_profiles/516ffc32-d053-4ad8-bd79-d6990693edf7/badges/15495800" target="_blank" rel="noopener noreferrer" class="cert-btn">View Certificate</a>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">🔗</div>
+          <div class="cert-body">
+            <span class="cert-issuer">Anthropic</span>
+            <h3 class="cert-name">Claude Academy: Model Context Protocol: Advanced Topics</h3>
+            <p class="cert-desc">Issued Oct 2026 · Credential ID fc611f618be3329db9d59dba95964ad1</p>
+          </div>
+          <a href="https://academy.claude.com/verify/fc611f618be3329db9d59dba95964ad1" target="_blank" rel="noopener noreferrer" class="cert-btn">View Certificate</a>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="250">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">⌘</div>
+          <div class="cert-body">
+            <span class="cert-issuer">Anthropic</span>
+            <h3 class="cert-name">Claude Academy: Claude Code in Action</h3>
+            <p class="cert-desc">Issued Oct 2026 · Credential ID 04cd8259252c0cac64669cc5384bb065</p>
+          </div>
+          <a href="https://academy.claude.com/verify/04cd8259252c0cac64669cc5384bb065" target="_blank" rel="noopener noreferrer" class="cert-btn">View Certificate</a>
+        </div>
+        <div class="cert-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="cert-glow"></div>
+          <div class="cert-icon">⌘</div>
+          <div class="cert-body">
+            <span class="cert-issuer">Anthropic</span>
+            <h3 class="cert-name">Claude Academy: Claude Code 101</h3>
+            <p class="cert-desc">Issued Oct 2026 · Credential ID aa844a1763544bbb6b9d7f4b836b7b31</p>
+          </div>
+          <a href="https://academy.claude.com/verify/aa844a1763544bbb6b9d7f4b836b7b31" target="_blank" rel="noopener noreferrer" class="cert-btn">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ CHATBOT ═══ -->
+  <div class="chatbot-fab" id="chatbotFab" title="Ask about Aayush">
+    <div class="fab-pulse"></div>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24"><path d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </div>
+  <div class="chatbot-panel" id="chatbotPanel">
+    <div class="chat-header">
+      <div class="chat-avatar">AM</div>
+      <div class="chat-info"><span>Ask about Aayush</span><small>AI Assistant</small></div>
+      <button class="chat-close" id="chatClose">✕</button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-msg bot">
+        <span>👋 Hi! I'm Aayush's AI assistant. Ask me anything about his skills, projects, or experience!</span>
+      </div>
+    </div>
+    <div class="chat-suggestions" id="chatSuggestions">
+      <button class="sugg-btn" data-q="What are your skills?">Skills?</button>
+      <button class="sugg-btn" data-q="Tell me about your projects">Projects?</button>
+      <button class="sugg-btn" data-q="What's your experience?">Experience?</button>
+      <button class="sugg-btn" data-q="How can I contact you?">Contact?</button>
+    </div>
+    <div class="chat-input-row">
+      <input type="text" class="chat-input" id="chatInput" placeholder="Ask something..."/>
+      <button class="chat-send" id="chatSend">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- ═══ CONTACT ═══ -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-label" data-aos="fade-right">06 — Contact</div>
+      <h2 class="section-title centered" data-aos="fade-up">
+        Let's <span class="gradient-text">Connect</span>
+      </h2>
+      <p class="section-sub centered" data-aos="fade-up" data-aos-delay="100">
+        Open to full-time roles, internships, and exciting collaborations.
+      </p>
+      <div class="contact-grid">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="200">
+          <div class="cinfo-item">
+            <div class="cinfo-icon">📧</div>
+            <div>
+              <span class="cinfo-label">Email</span>
+              <a href="mailto:aayushmaheshwari321@gmail.com" class="cinfo-val">aayushmaheshwari321@gmail.com</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">📱</div>
+            <div>
+              <span class="cinfo-label">Phone</span>
+              <a href="tel:+917023092083" class="cinfo-val">+91-7023092083</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">💻</div>
+            <div>
+              <span class="cinfo-label">GitHub</span>
+              <a href="https://github.com/aayush321-pingi/" target="_blank" rel="noopener noreferrer" class="cinfo-val">aayush321-pingi</a>
+            </div>
+          </div>
+          <div class="cinfo-item">
+            <div class="cinfo-icon">🔗</div>
+            <div>
+              <span class="cinfo-label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/aayush-maheshwari-261173306/" target="_blank" rel="noopener noreferrer" class="cinfo-val">aayush-maheshwari</a>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm" data-aos="fade-left" data-aos-delay="200" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <input type="text" id="formName" placeholder=" " required autocomplete="off"/>
+              <label for="formName">Your Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="formEmail" placeholder=" " required autocomplete="off"/>
+              <label for="formEmail">Email Address</label>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" id="formSubject" placeholder=" " required autocomplete="off"/>
+            <label for="formSubject">Subject</label>
+          </div>
+          <div class="form-group">
+            <textarea id="formMessage" placeholder=" " rows="5" required></textarea>
+            <label for="formMessage">Message</label>
+          </div>
+          <button type="submit" class="btn-primary form-submit">
+            <span>Send Message</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll get back to you soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <span class="logo-bracket">[</span>AM<span class="logo-bracket">]</span>
+        </div>
+        <p class="footer-copy">
+          Designed & built by <span class="gradient-text">Aayush Maheshwari</span> · 2026
+        </p>
+        <div class="footer-socials">
+          <a href="https://github.com/aayush321-pingi/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/aayush-maheshwari-261173306/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="mailto:aayushmaheshwari023@gmail.com">E-mail</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
